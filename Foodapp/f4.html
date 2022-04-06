@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FOOD DIARY</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./f2.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style the header */
+      header {
+        background-color: #666;
+        padding: 250px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        height: 650px;
+        background-image: url("—Pngtree—food food snack eating goods_925656.jpg");
+      }
+
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: left;
+        width: 20%;
+        height: 2700px;
+        background: #ccc;
+        padding: 20px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 80%;
+        background-color: #f1f1f1;
+        height: 2700px;
+      }
+      return {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        margin-left: 700px;
+      }
+      /* Clear floats after the columns */
+      section::after {
+        display: table;
+        clear: both;
+      }
+      .explore a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      .explore a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      .explore a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      .explore a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        text-align: center;
+        color: white;
+        padding: 10px;
+      }
+
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      a:visited {
+        color: rgb(198, 213, 226);
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: rgb(97, 120, 163);
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:active {
+        color: rgb(97, 123, 145);
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main" id="section1">
+      <h3>
+        WELCOME TO MY FOOD DIARY<br />
+        &nbsp;&nbsp;&nbsp;
+        <a href="#section2" class="main" id="explore"
+          >Click here to Explore Food...</a
+        >
+      </h3>
+    </header>
+    <div class="topnav" id="section2">
+      <a class="active" href="#home" target="_blank">Home</a>
+      <a href="#contact" target="_blank">Contact</a>
+      <a href="#about" target="_blank">About</a>
+    </div>
+    <section>
+      <nav id="aside">
+        <div>
+          <ul>
+            <li><a href="#pizza">Pizza</a></li>
+
+            <li><a href="#chicken">Butter Chicken</a></li>
+            <li><a href="#biryani">Biryani</a></li>
+            <li><a href="#milkshake">Milkshake</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <article>
+        <div id="pizza">
+          <h3>PIZZA</h3>
+          <p>
+            Pizza is a savory dish of Italian origin, consisting of a usually
+            round, flattened base of leavened ... The word "pizza" first
+            appeared in a Latin text from the central Italian town of Gaeta,
+            then still part of the Byzantine Empire, in 997 AD.The term pizza
+            was first recorded in the 10th century in a Latin manuscript from
+            the Southern Italian town of Gaeta in Lazio, on the border with
+            Campania.
+          </p>
+          <div class="slide-container">
+            <span id="slider-image-1"></span>
+            <span id="slider-image-2"></span>
+            <span id="slider-image-3"></span>
+            <div class="image-container">
+              <img src="1.png" class="slider-image" />
+              <img src="2.png" class="slider-image" />
+              <img src="3.png" class="slider-image" />
+            </div>
+            <div class="button-container">
+              <a href="#slider-image-1" class="slider-button" id="ex"></a>
+              <a href="#slider-image-2" class="slider-button" id="ex"></a>
+              <a href="#slider-image-3" class="slider-button" id="ex"></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="chicken">
+          <h3>BUTTER CHICKEN</h3>
+          <p>
+            Butter chicken, traditionally known as Murgh makhani, is a type of
+            curry made from chicken with a spiced tomato and butter (makhan)
+            sauce. Its sauce is known for its rich texture. In addition
+            sometimes the cream gives the curry sauce a silky smooth rich
+            texture. It originated in the Indian subcontinent as a curry.The
+            marinated chicken is cooked in a tandoor (traditional clay oven),
+            but may be grilled, roasted, or pan-fried.
+          </p>
+          <div class="slide-container">
+            <span id="slider-image-4"></span>
+            <span id="slider-image-5"></span>
+            <span id="slider-image-6"></span>
+            <div class="image-container">
+              <img src="4.png" class="slider-image" />
+              <img src="5.png" class="slider-image" />
+              <img src="6.png" class="slider-image" />
+            </div>
+            <div class="button-container">
+              <a href="#slider-image-4" class="slider-button"></a>
+              <a href="#slider-image-5" class="slider-button"></a>
+              <a href="#slider-image-6" class="slider-button"></a>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div id="biryani">
+          <h3>BIRYANI</h3>
+          <p>
+            Biryani is a mixed rice dish originating among the Muslims of the
+            Indian subcontinent. It is made with Indian spices, rice, either
+            with meat (chicken, beef, goat, lamb, prawn, fish), or eggs or
+            vegetables such as potatoes. Biryani is one of the most popular
+            dishes in South Asia, as well as among the diaspora from the region.
+            It has gained popularity in South India, and is also prepared in
+            other parts of the world such as Iraqi Kurdistan.
+          </p>
+          <div class="slide-container">
+            <span id="slider-image-7"></span>
+            <span id="slider-image-8"></span>
+            <span id="slider-image-9"></span>
+            <div class="image-container">
+              <img src="7.png" class="slider-image" />
+              <img src="8.png" class="slider-image" />
+              <img src="9.png" class="slider-image" />
+            </div>
+            <div class="button-container">
+              <a href="#slider-image-7" class="slider-button"></a>
+              <a href="#slider-image-8" class="slider-button"></a>
+              <a href="#slider-image-9" class="slider-button"></a>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div id="milkshake">
+          <h3>MILKSHAKE</h3>
+          <p>
+            A milkshake (sometimes simply called a shake) is a sweet drink made
+            by blending milk, ice cream, and flavorings or sweeteners such as
+            butterscotch, caramel sauce, chocolate syrup, fruit syrup, or whole
+            fruit into a thick, sweet, cold mixture. It may also be made using a
+            base made from non-dairy products, including plant milks such as
+            almond milk, coconut milk, or soy milk.
+          </p>
+          <div class="slide-container">
+            <span id="slider-image-10"></span>
+            <span id="slider-image-11"></span>
+            <span id="slider-image-12"></span>
+            <div class="image-container">
+              <img src="10.png" class="slider-image" />
+              <img src="11.jpg" class="slider-image" />
+              <img src="12.png" class="slider-image" />
+            </div>
+            <div class="button-container">
+              <a href="#slider-image-10" class="slider-button"></a>
+              <a href="#slider-image-11" class="slider-button"></a>
+              <a href="#slider-image-12" class="slider-button"></a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <div id="wrapper">
+      <a href="#section1" title="Back to top">
+        <div id="backToTop">
+          <svg width="30" height="55" viewBox="02 0 20 20">
+            <path
+              d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z"
+            ></path>
+          </svg>
+        </div>
+      </a>
+    </div>
+
+    <footer>
+      <p>
+        Brought to you by: NAMRATA KADAM<br />
+        <a
+          href="mailto:namratakadam190@gmail.com"
+          class="social"
+          target="_blank"
+          >&#128231;
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank">&#128247; </a>
+        <a href="https://www.facebook.com/" target="_blank">&#128270; </a>
+      </p>
+    </footer>
+  </body>
+</html>
